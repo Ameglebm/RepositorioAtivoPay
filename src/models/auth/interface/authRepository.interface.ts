@@ -1,6 +1,6 @@
 export interface IAuthRepository {
-    registerUser(email: string, password: string): Promise<void>;  
-    loginUser(email: string, password: string): Promise<string>;   
+    registerUser(email: string, senha: string): Promise<void>;  
+    loginUser(email: string, senha: string): Promise<string>;   
     logoutUser(token: string): Promise<void>;
   }
 
